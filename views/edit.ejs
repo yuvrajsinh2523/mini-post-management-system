@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Edit</title>
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Edit Comment</h2>
+
+    <form action="/view/<%= value.id %>?_method=PATCH" method="POST">
+        <h3><%= value.name %></h3>
+
+        <textarea name="comment"><%= value.comment %></textarea>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
+
+</body>
+</html>
